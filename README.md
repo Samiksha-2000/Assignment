@@ -28,14 +28,19 @@ Follow these steps to set up the project:
    
 2. **Install Requirements from requirements.txt**
    Ensure you have a requirements.txt file in the root directory containing necessary packages (e.g., Selenium, Pytest).
+    ```bash
    pip install -r requirements.txt
 
 3. **Create Folder for Tests**
+    ```bash
    mkdir tests
+    ```
    This folder will contain all the Pytest scripts.
    
 4. **Create Folder for Pages**
+  ```bash
    mkdir pages
+```
    This folder will contain Python files implementing the Page Object Model.
 
 5. **Project Structure**
@@ -58,7 +63,9 @@ Follow these steps to set up the project:
 The Page Object Model is a design pattern that enhances test maintenance and reduces code duplication. Each page of the application is represented by a separate class, encapsulating its elements and actions. This structure allows for better organization and easier updates to the tests.
 
 7.**Running Tests**
+ ```bash
    pytest tests/
+```
 **Test Files**
 test_amazon.py: This test file uses the Page Object Model (POM) to structure the tests for improved maintainability.
 test_amazon-original.py: This is the original test file that contains pure scripts without using POM.
@@ -67,12 +74,14 @@ test_amazon-original.py: This is the original test file that contains pure scrip
 8. **Generating Reports**
    To generate test reports, you can use plugins such as pytest-html. Install it via pip:
 
-
+ ```bash
 pip install pytest-html
+```
 Run the tests with the report option:
 
-
+ ```bash
 pytest --html=report.html
+```
 This will create a report.html file in the project root that summarizes the test results.
 
 
